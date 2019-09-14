@@ -10,7 +10,9 @@ A GitHub action that installs, creates and starts an Android emulator in headles
 
 ## Example usage
 
+```
 uses: reactivecircus/setup-android-emulator@v1.0.0
 with:
   api-level: 29
+```
 
