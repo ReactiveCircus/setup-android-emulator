@@ -1,0 +1,12 @@
+name: 'Setup Android Emulator'
+description: 'Install and start a headless Android Emulator for testing'
+inputs:
+  api-level:
+    decription: 'Android Emulator API level'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.api-level }}
+
