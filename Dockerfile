@@ -2,7 +2,14 @@ FROM reactivecircus/android-sdk:latest
 
 # Install packages
 RUN apt-get -qqy update && \
-    apt-get -qqy --no-install-recommends install libc++1 \
+    apt-get -qqy --no-install-recommends install \
+    qemu-kvm \
+    libvirt-bin \
+    ubuntu-vm-builder \
+    bridge-utils \
+    virtinst \
+    cpu-checker \
+    libc++1 \
   && rm -rf /var/lib/apt/lists/*
 
 # Environment variables
