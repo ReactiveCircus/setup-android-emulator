@@ -8,7 +8,7 @@ RUN apt-get -qqy update && \
 # Environment variables
 ENV PROCESSOR=x86 \
     SYS_IMG=x86_64 \
-    IMG_TYPE=google_apis \
+    IMG_TYPE=google_apis
 
 # Accept all licenses
 RUN yes | $ANDROID_HOME/tools/bin/sdkmanager --licenses
