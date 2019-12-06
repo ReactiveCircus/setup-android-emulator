@@ -1,5 +1,9 @@
 # Setup Android Emulator
 
+**Deprecated** - Linux VMs provided by GitHub Action don't support KVM which is required for running hardware-accelerated Emulators. Please use [Android Emulator Runner](https://github.com/ReactiveCircus/android-emulator-runner) which runs on macOS VMs.
+
+-------------------------
+
 A GitHub action that installs, creates and starts an Android emulator in headless mode for testing.
 
 ## Inputs
